@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>動漫資訊| 2017年10月新番</title>
+</head>
+
+<body>
+    <!--<div class="navbar">
+        <a href="index.html">首頁</a>
+        <a>2017年10月新番</a>
+        <div class = "container">
+            <a class = "text1">2018年1月新番</a>
+            <div class = "overlay1">建設中...</div>
+        </div>
+    </div>-->
+    <h1>2017年10月新番</h1>
+    <div class="horizontal-line"></div>
+    <div id="UQ">
+        <div style="float: left; margin-top: 100px;">
+            <img src="img/uq/logo.png" style="margin-left: 7.5vw; width: 200px; height: auto;">
+            <p style="font-size: 25px;">UQ HOLDER! 悠久持有者！</p>
+            <p style="font-size: 18px; margin-left: 9vw;">10月2日放送開始</p>
+        </div>
+        
+        
+        <p style="width:25%; margin-left:5vw; margin-top: 80px; float: left;">
+            <b style="font-size: 25px;">劇情大綱</b><br><br>
+            平穩而乏味的鄉村生活的少年·近衛刀太，<br>
+            有着前往都市一展宏圖的夢想。<br>
+            為此，他每天都向養育了自己的親人，<br>
+            同時也是優秀的魔法使·雪姬發起挑戰。<br>
+            但，一邊戰鬥一邊和睦度日的兩人面前出現的賞金獵人，<br>
+            宣告了平穩鄉村生活的終結。<br>
+            這是，成為不正經者的人們的物語。
+        </p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openVideo(event, 'PV2')" id="defaultOpen">PV2</button>
+            <button class="tablinks" onclick="openVideo(event, 'PV1')">PV1</button>
+        </div>
+        <div id = "PV2" class = "tabcontent">
+            <video id = "uq2" controls>
+                <source src="video/UQ Holder PV2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id = "PV1" class = "tabcontent">
+            <video id = "uq1"  controls>
+                <source src="video/UQ Holder PV1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="horizontal-line"></div>
+    <div id="UQ2">
+        <div class = "staff" style="margin-left:10vw; float: left;">
+            <p><b style="font-size: 30px;">STAFF</b></p>
+            <p style="font-size: 20px;"> 
+                監督: 鈴木洋平<br>
+                劇本統籌: 赤松健／安川正吾<br>
+                人物設計: 藤井昌宏<br>
+                美術總監: 鈴木友成<br>
+                色彩設計: 舩橋美香<br>
+                攝影總監: 福世晋吾<br>
+                編集: 後藤正浩（Real-T）<br>
+                音響監督: 鶴岡陽太<br>
+            </p>
+        </div>
+        <div class = "staff" style="float: left;">
+                <p style="margin-top: 85px; font-size: 20px;"> 
+                    効果: 山谷尚人<br>
+                    錄音調整: 椎原操志<br>
+                    音響制作: 樂音舍<br>
+                    音樂: 羽岡佳・石毛駿平<br>
+                    音樂製作: 國王唱片<br>
+                    企劃製作: EGG FIRM<br>
+                    動畫製作: J.C.STAFF<br>
+                    製作: UQナンバーズ
+                </p>
+            </div>
+        <div class = "cast" style="float: left;">
+                <p><b style="font-size: 30px;">CAST</b></p>
+                <p style="font-size: 20px;"> 
+                    近衛刀太: 高倉有加<br>
+                    雪姫: 松岡由貴<br>
+                    時坂九郎丸: 廣瀨唯希<br>
+                    櫻雨桐衣: 茅野愛衣<br>
+                    夏凜: 小倉唯<br>
+                    結城忍: 原田彩楓<br>
+                    雪廣霙: 鬼頭明里<br>
+                    飴屋一空: 柿原徹也<br>
+                    宍戶甚兵衛: 咲野俊介<br>
+                    真壁源五郎: 梶 裕貴<br>
+                    涅吉·史普林菲爾德: 佐藤利奈<br>
+                </p>
+            </div>
+            <div class = "cast" style="float: left;">
+                <p style="margin-top: 85px; font-size: 20px;">
+                    相坂小夜: 白鳥由里<br>
+                    綾瀬夕映: 桑谷夏子<br>
+                    神樂坂明日菜: 神田朱未<br>
+                    絡繰茶茶丸: 渡明乃<br>
+                    佐佐木蒔繪: 堀江由衣<br>
+                    龍宮真名: 佐久間未帆<br>
+                    宮崎和香: 能登麻美子<br>
+                    雪廣綾香: 皆川純子<br>
+                    菲特·亞維路克斯: 石田彰<br>
+                    傑克·拉坎: 小山力也<br>
+                    阿爾比雷歐·伊馬: 小野大輔
+                    </p>
+                </div>
+    </div>
+    <script>
+        function openVideo(evt, videoName) {
+            var i, tabcontent, tablinks;
+            document.getElementById("uq2").load();
+            document.getElementById("uq1").load();
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(videoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
