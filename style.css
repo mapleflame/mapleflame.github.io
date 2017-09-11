@@ -288,6 +288,11 @@ video{
         padding-bottom: 50px;
     }
     .horizontal-line2{ display: none;}
+    .staff1{
+        border-top-color: rgba(255, 255, 255,0.3);
+        border-top-style: solid;
+        border-top-width: 5px;
+    }
     .staff1, .staff2, .cast1, .cast2{
         margin-left: 0;
         margin-top: 0;
