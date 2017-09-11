@@ -229,7 +229,7 @@ video{
 
 
 @media only screen and (max-width: 1895px) {
-    #UQ{    padding-bottom: 1300px;    }
+    #UQ{    padding-bottom: 1255px;    }
     h1{ font-size: 50px;    }
     .logo{
         width: 100%;
@@ -328,7 +328,7 @@ video{
     }
 }
 @media only screen and (max-width: 1447px) {
-    #UQ{    padding-bottom: 1100px;    }
+    #UQ{    padding-bottom: 1255px;    }
     .video{
         margin-top: 0px;
         float: none; 
