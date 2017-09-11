@@ -328,6 +328,7 @@ video{
     }
 }
 @media only screen and (max-width: 1447px) {
+    #UQ{    padding-bottom: 1100px;    }
     .video{
         margin-top: 0px;
         float: none; 
