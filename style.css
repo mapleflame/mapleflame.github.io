@@ -35,26 +35,12 @@ html, body {
     cursor: pointer;
 }
 
-.overlay1 {
-    position: absolute;
-    left: 75.5vw;
-    top: 14px;
-    color: #f2f2f2;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .3s ease;
-}
 .container .text1:after{
     content:'2018年1月新番';
 }
 .container:hover .text1:after{
     transition: .3s ease;
     content: '建設中...';
-}
-
-.container:hover .overlay1 {
-    opacity: 0;
 }
 
 @media only screen and (max-width: 1548px) {
