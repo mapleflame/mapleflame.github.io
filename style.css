@@ -109,7 +109,7 @@ h1{
     color: white;
 }
 
-.horizontal-line{
+.horizontal-line, .horizontal-line2{
     background-color: white;
     opacity: 0.4;
     height: 5px;
@@ -149,7 +149,7 @@ p{
     font-size: 25px;
 }
 
-.video{
+.videoall{
     float: left;
     margin-left: 20px; 
     margin-right: 3vw;
@@ -228,7 +228,7 @@ video{
 
 
 
-@media only screen and (max-width: 1895px) and (min-device-width: 480px) {
+@media only screen and (max-width: 1895px)  {
     #UQ{    padding-bottom: 1255px;    }
     h1{ font-size: 50px;    }
     .logo{
@@ -260,9 +260,9 @@ video{
         font-size: 30px;
     }
     .story b{   font-size: 35px;    }
-    .video{
-        margin-top: 0px;
+    .videoall{
         float: none; 
+        margin-top: 0px;
         margin-bottom: 40px;
     }
     .tab{
@@ -283,9 +283,16 @@ video{
         margin-left: 7vw;
     }
 }
-@media only screen and (max-width: 1700px) and (min-device-width: 480px){
+@media only screen and (max-width: 1700px) {
     #UQ2{
         padding-bottom: 50px;
+    }
+    .horizontal-line2{ display: none;  }
+    .staff1{
+        padding-top: 0px;
+        border-top-color: rgba(255, 255, 255,0.3);
+        border-top-style: solid;
+        border-top-width: 5px;
     }
     .staff1, .staff2, .cast1, .cast2{
         margin-left: 0;
@@ -311,25 +318,47 @@ video{
     .staff2 p, .cast2 p{
         margin-top: 0;
     }
-}
-@media only screen and (max-width: 1600px) {
-    .tab{ 
-        margin-left: 5vw;
+    .tab{
+        margin-top: 50px;  
+        margin-left: 3vw;
+        height: 776px;
     }
+    .tab button{    height: 388px;    }
+    .tabcontent {
+        width: 1380px;
+        margin-top: 50px;
+        height: 776px;
+    }
+    video{  width:1380px;  }
 }
-@media only screen and (max-width: 1530px) {
+@media only screen and (max-width: 1680px) {
     .tab{ 
         margin-left: 2vw;
     }
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1650px) {
     .tab{ 
         margin-left: 1vw;
     }
 }
-@media only screen and (max-width: 1447px) {
+@media only screen and (max-width: 1600px) {
+    
+    .tab{
+        margin-top: 50px;  
+        margin-left: 3vw;
+        height: 731px;
+    }
+    .tab button{    height: 365.5px;    }
+    .tabcontent {
+        width: 1300px;
+        margin-top: 50px;
+        height: 731px;
+    }
+    video{  width:1300px;  }
+}
+@media only screen and (max-width: 1580px) {
     #UQ{    padding-bottom: 1100px;    }
-    .video{
+    .videoall{
         margin-top: 0px;
         float: none; 
         margin-bottom: 40px;
@@ -346,7 +375,6 @@ video{
         height: 562px;
     }
     video{  width:1000px;  }
-    sta
 }
 @media only screen and (max-width: 1420px) {
     .tab{ 
@@ -372,16 +400,16 @@ video{
     }
     .tab{
         margin-top: 50px;  
-        margin-left: 9.5vw;
-        height: 450px;
+        margin-left: 5.5vw;
+        height: 506px;
     }
-    .tab button{    height: 225px;    }
+    .tab button{    height: 253px;    }
     .tabcontent {
-        width: 800px;
+        width: 900px;
         margin-top: 50px;
-        height: 450px;
+        height: 506px;
     }
-    video{  width:800px;  }
+    video{  width:900px;  }
 }
 @media only screen and (max-width: 1200px) {
     #UQ{    padding-bottom: 880px;    }
@@ -392,15 +420,15 @@ video{
     }
     .tab{
         margin-top: 50px;  
-        margin-left: 10%;
-        height: 337px;
+        margin-left: 4%;
+        height: 393px;
     }
-    .tab button{    height: 168.5px;   }
+    .tab button{    height: 196.5px;   }
     .tabcontent {
-        width: 600px;
+        width: 700px;
         margin-top: 50px;
-        height: 337px;
-        margin-right: 5%;
+        height: 393px;
+        margin-right: 2%;
     }
-    video{  width:600px;  }
+    video{  width:700px;  }
 }
