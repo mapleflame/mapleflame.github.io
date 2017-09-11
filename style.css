@@ -35,12 +35,17 @@ html, body {
     cursor: pointer;
 }
 
+.container:hover a{
+    cursor: default;
+}
 .container .text1:after{
     content:'2018年1月新番';
 }
+
 .container:hover .text1:after{
     transition: .3s ease;
     content: '建設中...';
+    cursor: default;
 }
 
 @media only screen and (max-width: 1548px) {
@@ -110,10 +115,47 @@ h1{
     height: 5px;
 }
 
+.logo{
+    text-align:center; 
+    float: left; 
+    margin-top: 100px;
+    margin-left: 3vw;
+}
+.logo .uqlogo{
+    width: 200px; 
+    height: auto;
+}
+.logo #logo1{
+    font-size: 25px;
+}
+.logo #logo2{
+    font-size: 18px;
+}
+
 p{  
-    margin-left: 5vw;
     color: white;
 }
+
+.story{
+    width: 500px; 
+    margin-left:100px; 
+    margin-top: 80px; 
+    float: left;
+}
+.story p{
+    font-size: 20px;
+}
+.story b{
+    font-size: 25px;
+}
+
+.video{
+    float: left;
+    margin-left: 20px; 
+    margin-right: 3vw;
+}
+
+
 /* Style the tab */
 .tab {
     margin-left: 2vw;
@@ -165,3 +207,200 @@ video{
     height: auto;
 }
 
+.staff1, .staff2, .cast1, .cast2{
+    margin-left:5vw;
+    float: left;
+}
+.staff1{
+    margin-left:15vw;
+}
+.staff1 p, .staff2 p, .cast1 p, .cast2 p{
+    font-size: 20px;
+}
+.staff1 p b, .cast1 p b{
+    font-size: 30px;
+}
+.staff2 p, .cast2 p{
+    margin-top: 85px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1895px) {
+    #UQ{    padding-bottom: 1255px;    }
+    h1{ font-size: 50px;    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0;
+        line-height: 10px;
+        padding-bottom: 40px;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .logo .uqlogo{  width: 400px;    }
+    .logo #logo1{   font-size: 40px;    }
+    .logo #logo2{   font-size: 30px;    }
+    .story{
+        margin-top: 0px;
+        width:100%; 
+        margin-left: 0;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .story p{
+        text-align: center;
+        margin-left: 0;
+        float: none;
+        font-size: 30px;
+    }
+    .story b{   font-size: 35px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 12vw;
+        height: 703px;
+    }
+    .tab button{    height: 351.6px;    }
+    .tabcontent {
+        width: 1250px;
+        margin-top: 50px;
+        height: 703px;
+    }
+    video{  width:1250px;  }
+}
+@media only screen and (max-width: 1800px) {
+    .tab{ 
+        margin-left: 7vw;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #UQ2{
+        padding-bottom: 50px;
+    }
+    .staff1, .staff2, .cast1, .cast2{
+        margin-left: 0;
+        margin-top: 0;
+        float: none;
+        text-align: center;
+    }
+    .cast1{
+        padding-top: 50px;
+    }
+    .staff1 p, .staff2 p, .cast1 p, .cast2 p{
+        font-size: 30px;
+    }
+    .staff1 p b, .cast1 p b{
+        font-size: 35px;
+    }
+    .staff2{
+        padding-bottom: 50px;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .staff2 p, .cast2 p{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .tab{ 
+        margin-left: 5vw;
+    }
+}
+@media only screen and (max-width: 1530px) {
+    .tab{ 
+        margin-left: 2vw;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .tab{ 
+        margin-left: 1vw;
+    }
+}
+@media only screen and (max-width: 1447px) {
+    #UQ{    padding-bottom: 1100px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 10vw;
+        height: 562px;
+    }
+    .tab button{    height: 281px;    }
+    .tabcontent {
+        width: 1000px;
+        margin-top: 50px;
+        height: 562px;
+    }
+    video{  width:1000px;  }
+    sta
+}
+@media only screen and (max-width: 1420px) {
+    .tab{ 
+        margin-left: 8vw;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .tab{ 
+        margin-left: 6vw;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .tab{ 
+        margin-left: 4vw;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #UQ{    padding-bottom: 990px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 9.5vw;
+        height: 450px;
+    }
+    .tab button{    height: 225px;    }
+    .tabcontent {
+        width: 800px;
+        margin-top: 50px;
+        height: 450px;
+    }
+    video{  width:800px;  }
+}
+@media only screen and (max-width: 1200px) {
+    #UQ{    padding-bottom: 880px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 10%;
+        height: 337px;
+    }
+    .tab button{    height: 168.5px;   }
+    .tabcontent {
+        width: 600px;
+        margin-top: 50px;
+        height: 337px;
+        margin-right: 5%;
+    }
+    video{  width:600px;  }
+}
