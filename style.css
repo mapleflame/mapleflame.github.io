@@ -17,6 +17,7 @@ html, body {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    text-align: center;
 }
 
 /* Links inside the navbar */
@@ -49,9 +50,14 @@ html, body {
 }
 
 @media only screen and (max-width: 1548px) {
+    .navbar {
+        height: 20%;
+    }
     .navbar a{
-        width:15%;
-        margin-left: 10vw;
+        font-size:30px;
+        width: 25%;
+        margin-left: 1.5vw;
+        margin-top: 50px;
     }
 }
 
