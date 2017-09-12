@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+html, body {
+    margin: 0px;
+    font-family: 'Noto Sans TC';
+    background-color: black;
+    color: black;
+    height: 100%;
+    padding: 0;
+}
+
+/*201710*/
+#UQ, #UQ2{
+    background-color: rgba(128, 128, 128,0.3);
+    background-size: auto;
+    padding-top: 55px;
+    padding-bottom: 445px;
+}
+#UQ2{
+    padding-bottom: 460px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.horizontal-line, .horizontal-line2{
+    background-color: white;
+    opacity: 0.4;
+    height: 5px;
+}
+
+.logo{
+    text-align:center; 
+    float: left; 
+    margin-top: 100px;
+    margin-left: 3vw;
+}
+.logo .uqlogo{
+    width: 200px; 
+    height: auto;
+}
+.logo #logo1{
+    font-size: 25px;
+}
+.logo #logo2{
+    font-size: 18px;
+}
+
+p{  
+    color: white;
+}
+
+.story{
+    width: 500px; 
+    margin-left:100px; 
+    margin-top: 80px; 
+    float: left;
+}
+.story p{
+    font-size: 20px;
+}
+.story b{
+    font-size: 25px;
+}
+
+.video{
+    float: left;
+    margin-left: 20px; 
+    margin-right: 3vw;
+}
+
+
+/* Style the tab */
+.tab {
+    margin-left: 2vw;
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 394px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    height: 197px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 0px;
+    border: 1px solid #ccc;
+    width: 700px;
+    border-left: none;
+    height: 394px;
+}
+
+video{
+    width: 700px;
+    height: auto;
+}
+
+.staff1, .staff2, .cast1, .cast2{
+    margin-left:5vw;
+    float: left;
+}
+.staff1{
+    margin-left:15vw;
+}
+.staff1 p, .staff2 p, .cast1 p, .cast2 p{
+    font-size: 20px;
+}
+.staff1 p b, .cast1 p b{
+    font-size: 30px;
+}
+.staff2 p, .cast2 p{
+    margin-top: 85px;
+}
+
+@media only screen and (max-width: 1895px) {
+    #UQ{    padding-bottom: 1255px;    }
+    h1{ font-size: 50px;    }
+    .logo{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0;
+        line-height: 10px;
+        padding-bottom: 40px;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .logo .uqlogo{  width: 400px;    }
+    .logo #logo1{   font-size: 40px;    }
+    .logo #logo2{   font-size: 30px;    }
+    .story{
+        margin-top: 0px;
+        width:100%; 
+        margin-left: 0;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .story p{
+        text-align: center;
+        margin-left: 0;
+        float: none;
+        font-size: 30px;
+    }
+    .story b{   font-size: 35px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 12vw;
+        height: 703px;
+    }
+    .tab button{    height: 351.6px;    }
+    .tabcontent {
+        width: 1250px;
+        margin-top: 50px;
+        height: 703px;
+    }
+    video{  width:1250px;  }
+}
+@media only screen and (max-width: 1800px) {
+    .tab{ 
+        margin-left: 7vw;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #UQ2{
+        padding-bottom: 50px;
+    }
+    .horizontal-line2{ display: none; }
+    
+    .staff1{
+        border-top-color: rgba(255, 255, 255,0.3);
+        border-top-style: solid;
+        border-top-width: 5px;
+    }
+    .staff1, .staff2, .cast1, .cast2{
+        margin-left: 0;
+        margin-top: 0;
+        float: none;
+        text-align: center;
+    }
+    .cast1{
+        padding-top: 50px;
+    }
+    .staff1 p, .staff2 p, .cast1 p, .cast2 p{
+        font-size: 30px;
+    }
+    .staff1 p b, .cast1 p b{
+        font-size: 35px;
+    }
+    .staff2{
+        padding-bottom: 50px;
+        border-bottom-color: rgba(255, 255, 255,0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+    }
+    .staff2 p, .cast2 p{
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .tab{ 
+        margin-left: 5vw;
+    }
+}
+@media only screen and (max-width: 1530px) {
+    .tab{ 
+        margin-left: 2vw;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .tab{ 
+        margin-left: 1vw;
+    }
+}
+@media only screen and (max-width: 1447px) {
+    #UQ{    padding-bottom: 1100px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 10vw;
+        height: 562px;
+    }
+    .tab button{    height: 281px;    }
+    .tabcontent {
+        width: 1000px;
+        margin-top: 50px;
+        height: 562px;
+    }
+    video{  width:1000px;  }
+    sta
+}
+@media only screen and (max-width: 1420px) {
+    .tab{ 
+        margin-left: 8vw;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .tab{ 
+        margin-left: 6vw;
+    }
+}
+@media only screen and (max-width: 1340px) {
+    .tab{ 
+        margin-left: 4vw;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #UQ{    padding-bottom: 990px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 9.5vw;
+        height: 450px;
+    }
+    .tab button{    height: 225px;    }
+    .tabcontent {
+        width: 800px;
+        margin-top: 50px;
+        height: 450px;
+    }
+    video{  width:800px;  }
+}
+@media only screen and (max-width: 1200px) {
+    #UQ{    padding-bottom: 880px;    }
+    .video{
+        margin-top: 0px;
+        float: none; 
+        margin-bottom: 40px;
+    }
+    .tab{
+        margin-top: 50px;  
+        margin-left: 10%;
+        height: 337px;
+    }
+    .tab button{    height: 168.5px;   }
+    .tabcontent {
+        width: 600px;
+        margin-top: 50px;
+        height: 337px;
+        margin-right: 5%;
+    }
+    video{  width:600px;  }
+}
+
+
+/*Side Navigation*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 100px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #272727;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #505050;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    padding-top: 0;
+    z-index: 1;
+    position: fixed;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .sidenav a {font-size: 30px;}
+    .sidenav .closebtn {font-size: 70px;}
+}
