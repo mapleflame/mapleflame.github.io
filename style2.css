@@ -9,6 +9,10 @@ html, body {
     height: 100%;
     padding: 0;
 }
+body{
+    width: 1903px;
+    overflow: auto;
+}
 
 /*201710*/
 #UQ, #UQ2, #BlackClover, #BlackClover2,
@@ -65,6 +69,7 @@ p{
     float: left;
 }
 .story2{
+    width: 550px; 
     height: 343px;
     overflow: auto;
 }
@@ -156,7 +161,7 @@ video{
 
 
 
-
+/*
 @media only screen and (max-width: 1895px) {
     #UQ{    padding-bottom: 1255px;    }
     #BlackClover{    padding-bottom: 20px;    }
@@ -360,7 +365,7 @@ video{
     .video2 video{
         margin-left: 6%;
     } 
-}
+}*/
 
 
 /*Side Navigation*/
@@ -405,6 +410,11 @@ video{
     position: fixed;
     color: white;
 }
+
+#content{
+    transition: margin-left .5s;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
