@@ -11,7 +11,8 @@ html, body {
 }
 
 /*201710*/
-#UQ, #UQ2{
+#UQ, #UQ2, #BlackClover, #BlackClover2,
+#Senkoku1, #Senkoku2{
     background-color: rgba(128, 128, 128,0.3);
     background-size: auto;
     padding-top: 55px;
@@ -20,7 +21,9 @@ html, body {
 #UQ2{
     padding-bottom: 460px;
 }
-
+#Senkoku2{
+    padding-bottom: 510px;
+}
 h1{
     text-align: center;
     margin-bottom: 20px;
@@ -40,7 +43,7 @@ h1{
     margin-top: 100px;
     margin-left: 3vw;
 }
-.logo .uqlogo{
+.logo .uqlogo, .logo .bclogo, .logo .snblogo{
     width: 200px; 
     height: auto;
 }
@@ -55,25 +58,28 @@ p{
     color: white;
 }
 
-.story{
+.story, .story2{
     width: 500px; 
     margin-left:100px; 
-    margin-top: 80px; 
+    margin-top: 40px; 
     float: left;
 }
-.story p{
+.story2{
+    height: 343px;
+    overflow: auto;
+}
+.story p, .story2 p{
     font-size: 20px;
 }
-.story b{
+.story b, .story2 b{
     font-size: 25px;
 }
 
-.video{
+.video, .video2{
     float: left;
     margin-left: 20px; 
     margin-right: 3vw;
 }
-
 
 /* Style the tab */
 .tab {
@@ -131,7 +137,7 @@ video{
     float: left;
 }
 .staff1{
-    margin-left:15vw;
+    margin-left:13vw;
 }
 .staff1 p, .staff2 p, .cast1 p, .cast2 p{
     font-size: 20px;
@@ -143,8 +149,17 @@ video{
     margin-top: 85px;
 }
 
+.video2{
+    margin-left: 100px;  
+}
+
+
+
+
+
 @media only screen and (max-width: 1895px) {
     #UQ{    padding-bottom: 1255px;    }
+    #BlackClover{    padding-bottom: 20px;    }
     h1{ font-size: 50px;    }
     .logo{
         width: 100%;
@@ -160,7 +175,7 @@ video{
     .logo .uqlogo{  width: 400px;    }
     .logo #logo1{   font-size: 40px;    }
     .logo #logo2{   font-size: 30px;    }
-    .story{
+    .story, .story2{
         margin-top: 0px;
         width:100%; 
         margin-left: 0;
@@ -168,14 +183,18 @@ video{
         border-bottom-style: solid;
         border-bottom-width: 5px;
     }
-    .story p{
+    .story2{
+        overflow: none;
+        height: auto;
+    }
+    .story p, .story2 p{
         text-align: center;
         margin-left: 0;
         float: none;
         font-size: 30px;
     }
-    .story b{   font-size: 35px;    }
-    .video{
+    .story b, .story2 b{   font-size: 35px;    }
+    .video, .video2{
         margin-top: 0px;
         float: none; 
         margin-bottom: 40px;
@@ -192,6 +211,11 @@ video{
         height: 703px;
     }
     video{  width:1250px;  }
+    
+    .video2 video{
+        margin-top: 50px; 
+        margin-left: 11vw;
+    } 
 }
 @media only screen and (max-width: 1800px) {
     .tab{ 
@@ -251,7 +275,7 @@ video{
 }
 @media only screen and (max-width: 1447px) {
     #UQ{    padding-bottom: 1225px;    }
-    .video{
+    .video, .video2{
         margin-top: 0px;
         float: none; 
         margin-bottom: 40px;
@@ -268,7 +292,10 @@ video{
         height: 562px;
     }
     video{  width:1000px;  }
-    sta
+    
+    .video2 video{
+        margin-left: 6%;
+    } 
 }
 @media only screen and (max-width: 1420px) {
     .tab{ 
@@ -287,7 +314,7 @@ video{
 }
 @media only screen and (max-width: 1300px) {
     #UQ{    padding-bottom: 1000px;    }
-    .video{
+    .video, .video2{
         margin-top: 0px;
         float: none; 
         margin-bottom: 40px;
@@ -304,10 +331,14 @@ video{
         height: 450px;
     }
     video{  width:800px;  }
+    
+    .video2 video{
+        margin-left: 6%;
+    } 
 }
 @media only screen and (max-width: 1200px) {
     #UQ{    padding-bottom: 1000px;    }
-    .video{
+    .video, .video2{
         margin-top: 0px;
         float: none; 
         margin-bottom: 40px;
@@ -325,6 +356,10 @@ video{
         margin-right: 5%;
     }
     video{  width:600px;  }
+    
+    .video2 video{
+        margin-left: 6%;
+    } 
 }
 
 
@@ -336,23 +371,23 @@ video{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #111;
     overflow-x: hidden;
-    transition: 0.7s;
-    padding-top: 100px;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #272727;
+    color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #505050;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -366,10 +401,14 @@ video{
 #main {
     transition: margin-left .5s;
     padding: 16px;
-    padding-top: 0;
-    z-index: 1;
+    padding-top:0;  
     position: fixed;
     color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 @media screen and (max-width:1200px) {
