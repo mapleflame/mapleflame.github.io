@@ -7,27 +7,27 @@
 </head>
 
 <body>
-    <!--<div class="navbar">
-        <a href="index.html">首頁</a>
-        <a>2017年10月新番</a>
-        <div class = "container">
-            <a class = "text1">2018年1月新番</a>
-            <div class = "overlay1">建設中...</div>
-        </div>
-    </div>-->
+    
     <!--Side Navigation-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">首頁</a>
-        <a style="color: #505050;">2017年10月新番</a>
+        <a style="color: #686868;">2017年10月新番</a>
         <a href="#UQ" style="font-size: 20px;"><li>UQ Holder!</li></a>
         <a href="#BlackClover" style="font-size: 20px;"><li>黑色五葉草</li></a>
         <a href="#Senkoku1" style="font-size: 20px;"><li>戰血夜刻</li></a>
+        <a href="#taisen" style="font-size: 20px;"><li>十二大戰</li></a>
+        <a href="#sns" style="font-size: 20px;"><li>食戟之靈 餐之皿</li></a>
     </div>
     <div id="main">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
     </div>
 
+    <!--Top Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="top"></i></button>
+
+
+    <!--Content-->
     <div id="content">
         <center><h1>2017年10月新番</h1></center>
         <div class="horizontal-line"></div>
@@ -257,8 +257,8 @@
                     監　　督：菊池勝也<br>
                     劇本統籌：柿原優子<br>
                     角色設計：小松原 聖、<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;奥山鈴奈、<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;中田知里<br>
+                    　　　　　奥山鈴奈、<br>
+                    　　　　　中田知里<br>
                     美術監督/設定：中原英統<br>
                     攝影監督：今泉秀樹
                 </p>
@@ -312,6 +312,186 @@
                 </p>
             </div>
         </div>
+
+        <!--十二大戰-->
+        <div class="horizontal-line"></div>
+        <div id="taisen">
+            <div class = "logo" style="margin-left:5vw;">
+                <img class ="tlogo" src="img/12/logo.png" style="-webkit-filter: invert(1); filter:invert(1);">
+                <p id="logo1">12 Taisen 十二大戰</p>
+                <p id="logo2">10月3日放送開始</p>
+            </div>
+            
+            <div class="story2" style="margin-left:151px;">
+            <p>
+                <b>劇情大綱</b><br><br>
+                充滿自負的十二戰士的血戰的記錄 ――<br>
+                十二年一度的十二大戰的第十二回。<br>
+                擁有十二生肖名義的十二名勇士將賭上生命和靈魂彼此爭鬥。<br>
+                參加者是「子」「丑」「寅」「卯」「辰」「巳」「午」<br>
+                「未」「申」「酉」「戌」「亥」十二名異樣的戰士。<br>
+                在這場互相殘殺中生還之人，能夠實現任何一個願望――<br>
+                活到最後的是誰？<br>
+                在謀略與殺戮席捲的戰場上，落下的是誰的眼淚？<br>
+                驚心動魄的混合大戰，開戰！
+            </p>
+            </div>
+
+            <div class="video">
+                <div class="tab2"style=" margin-left: 10px;">
+                    <button class="tablinks2 active" onclick="openVideo2(event, 'PV6')">PV2</button>
+                    <button class="tablinks2" onclick="openVideo2(event, 'PV5')">PV1</button>
+                </div>
+                <div id = "PV6" class = "tabcontent2">
+                    <video id = "t2" controls>
+                        <source src="video/12 Taisen PV2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "PV5" class = "tabcontent2" style="display: none;">
+                    <video id = "t1"  controls >
+                        <source src="video/12 Taisen PV1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line2"></div>
+        <div id="taisen2" >
+            <div class = "staff1">
+                <p><b>STAFF</b></p>
+                <p> 
+                    原　　作：西尾維新<br>
+                    漫　　畫：中村光<br>
+                    監　　督：細田直人<br>
+                    劇本統籌：村井貞之<br>
+                    角色設計：嘉手苅睦
+                    
+                </p>
+            </div>
+            <div class = "staff2">
+                <p> 
+                    音　　樂：椎名豪<br>
+                    音樂製作：avex pictures<br>
+                    動畫製作：Graphinica<br>
+                    製　　作：十二大戰製作委員會
+                </p>
+            </div>
+            <div class = "cast1" style="margin-left:9.1vw;">
+                <p><b>CAST</b></p>
+                <p> 
+                    寢住/墨野繼義：堀江瞬<br>
+                    失井/樫井榮兒：梅原裕一郎<br>
+                    妒良/姶良香奈江：五十嵐裕美<br>
+                    憂城：岡本信彦<br>
+                    斷罪・兄/積田長幸：江口拓也<br>
+                    斷罪・弟/積田剛保：鳥海浩輔<br>
+                    迂迂真：綠川光<br>
+                </p>
+            </div>
+            <div class = "cast2">
+                <p>
+                    必爺：長<br>
+                    砂粒/柚木美：早見沙織<br>
+                    庭取/丹羽遼香：佐倉綾音<br>
+                    怒突/津久井道雄：西村朋紘<br>
+                    異能肉/伊能淑子：日笠陽子<br>
+                    杜碟凱普：安元洋貴      
+                </p>
+            </div>
+        </div>
+
+        <!--食戟之靈-->
+        <div class="horizontal-line"></div>
+        <div id="sns">
+            <div class = "logo" style="margin-top: 0px;">
+                <img class ="snslogo" src="img/sns/logo.png">
+                <p id="logo1">Shokugeki no Soma S3</p>
+                <p id="logo1">食戟之靈 餐之皿</p>
+                <p id="logo2">10月3日放送開始</p>
+            </div>
+            
+            <div class="story2" style="margin-left:151px;">
+            <p>
+                <b>劇情大綱</b><br><br>
+                一邊在老家的定食店「幸平餐館」方面幫忙，<br>
+                一邊提高做菜本領的幸平創真，<br>
+                進入了超精英廚藝學校「遠月學園」就讀。<br>
+                創真在學校遇見各式各樣的廚師們，並且在持續成長中，<br>
+                開始摸索屬於自己的料理。<br>
+                在前往實際做菜的現場，學習實戰的課題「實地研修」中，<br>
+                更進一步累積經驗的創真，打破了「迄今為止的自己」，<br>
+                并且最終創造了新「幸平餐館」的料理，達到了一個成長。<br>
+                在完成實地研修後，在每一天的食戟更進一步重復鑽研的創真，
+                在「紅葉狩會」上，<br>向學校的頂點「遠月十傑」發出挑戰。<br>
+                創真為了和十傑比賽，關注了作為遠月恆例行事的學園祭--<br>
+                著名的「月饗祭」。<br>
+                每年，有50萬個人拜訪的怪物活動，而他能夠成功嗎!？<br>
+                另一方面，出自某個背後人物的計劃將開始行動--？<br>
+                創真的新的戰鬥即將開幕！<br>
+            </p>
+            </div>
+
+            <div class="video2">
+                <div id = "PV7" >
+                    <video id = "sns1" controls>
+                        <source src="video/Shokugeki no Soma PV.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line2"></div>
+        <div id="sns2" >
+            <div class = "staff1">
+                <p><b>STAFF</b></p>
+                <p> 
+                    原　　作：附田祐斗、佐伯 俊<br>
+                    協　　力：森崎友紀<br>
+                    監　　督：米谷良知<br>
+                    劇本統籌：安川正吾<br>
+                    角色設計：下谷智之<br>
+                    副　監督：佐藤光敏<br>
+                    副　設計：小森 篤<br>
+                    美術監督：備前光一郎
+                    
+                </p>
+            </div>
+            <div class = "staff2">
+                <p> 
+                    色彩設計：伊藤由紀子<br>
+                    攝影監督：黑澤 豊<br>
+                    編　　集：近藤勇二（REAL-T）<br>
+                    音　　樂：加藤達也<br>
+                    音響製作：明田川 仁<br>
+                    動畫製作：J.C.STAFF<br>
+                    OP主題曲：ZAQ「BRAVER」<br>
+                    ED主題曲：nano.RIPE「虛虛實實」
+                </p>
+            </div>
+            <div class = "cast1" style="margin-left:3vw;">
+                <p><b>CAST</b></p>
+                <p> 
+                    幸平創真：松岡禎丞<br>
+                    田所 恵：高橋未奈美<br>
+                    新戶緋沙子：大西沙織<br>
+                    巧·阿爾迪尼：花江夏樹
+                </p>
+            </div>
+            <div class = "cast2">
+                <p>
+                    第一席 司瑛士：石田彰<br>
+                    第二席 小林龍膽：伊藤靜<br>
+                    第三席 女木島冬輔：未公開<br>
+                    第四席 茜久保桃：釘宮理惠<br>
+                    第五席 齋藤綜明 ：未公開<br>
+                    第六席 紀之國寧寧：花澤香菜<br>
+                    第七席 一色慧：櫻井孝宏<br>
+                    第八席 久我照紀 ：梶裕貴<br>
+                    第九席 睿山枝津也 ：杉田智和<br>
+                    第十席 薙切繪裡奈 ：金元壽子  
+                </p>
+            </div>
+        </div>
+
+
     </div>
 
     
@@ -327,15 +507,12 @@
         </center>
     </footer>
 
-
-
-
-
-
     <!--JS for navigation-->
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("mySidenav").style.transition = "display 0.5s";
             document.getElementById("main").style.marginLeft = "250px";
             document.getElementById("content").style.marginLeft = "250px";
             document.getElementById("content").style.width = "1903px";
@@ -343,19 +520,20 @@
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
+            document.getElementById("mySidenav").style.display = "none";  
+            document.getElementById("mySidenav").style.transition = "display 0.5s";  
+            document.getElementById("main").style.marginLeft = "0";        
             document.getElementById("content").style.marginLeft = "0";
             document.getElementById("content").style.width = "1903px";
         }
     </script>
 
-
+    <!--JS for openVideo-->
     <script>
         function openVideo(evt, videoName) {
             var i, tabcontent, tablinks;
             document.getElementById("uq2").load();
             document.getElementById("uq1").load();
-            document.getElementById("bc").load();
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
@@ -371,6 +549,26 @@
         document.getElementById("defaultOpen").click();
     </script>
 
+    <!--JS for openVideo2-->
+    <script>
+        function openVideo2(evt, videoName) {
+            var i, tabcontent2, tablinks2;
+            document.getElementById("t2").load();
+            document.getElementById("t1").load();
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(videoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!--JS for stop video-->
     <script>
         var v1 = document.getElementById('bc');
         v1.addEventListener('play', 
@@ -378,32 +576,77 @@
                 document.getElementById("uq2").load();
                 document.getElementById("uq1").load();
                 document.getElementById("snb").load();
+                document.getElementById("t1").load();
+                document.getElementById("t2").load();
             }, 
             false);
-        var v2 = document.getElementById('uq1');
-        v2.addEventListener('play', 
+        v1 = document.getElementById('uq1');
+        v1.addEventListener('play', 
             function() {         
                 document.getElementById("bc").load();
                 document.getElementById("snb").load();
+                document.getElementById("t1").load();
+                document.getElementById("t2").load();
             }, 
             false);
-        var v3 = document.getElementById('uq2');
-        v3.addEventListener('play', 
+        v1 = document.getElementById('uq2');
+        v1.addEventListener('play', 
             function() {         
                 document.getElementById("bc").load();
                 document.getElementById("snb").load();
+                document.getElementById("t1").load();
+                document.getElementById("t2").load();
             }, 
             false);
-        var v4 = document.getElementById('snb');
-        v4.addEventListener('play', 
+        v1 = document.getElementById('snb');
+        v1.addEventListener('play', 
             function() {         
                 document.getElementById("uq2").load();
                 document.getElementById("uq1").load();
                 document.getElementById("bc").load();
+                document.getElementById("t1").load();
+                document.getElementById("t2").load();
+            }, 
+            false);
+        v1 = document.getElementById('t1');
+        v1.addEventListener('play', 
+            function() {         
+                document.getElementById("bc").load();
+                document.getElementById("snb").load();
+                document.getElementById("uq1").load();
+                document.getElementById("uq2").load();
+            }, 
+            false);
+        v1 = document.getElementById('t2');
+        v1.addEventListener('play', 
+            function() {         
+                document.getElementById("bc").load();
+                document.getElementById("snb").load();
+                document.getElementById("uq1").load();
+                document.getElementById("uq2").load();
             }, 
             false);
     </script>
 
+    <!--JS for top button-->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     
 </body>
 

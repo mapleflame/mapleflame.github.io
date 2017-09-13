@@ -22,11 +22,20 @@ body{
     padding-top: 55px;
     padding-bottom: 445px;
 }
+#taisen, #taisen2, #sns, #sns2{
+    background-color: rgba(128, 128, 128,0.3);
+    background-size: auto;
+    padding-top: 55px;
+    padding-bottom: 445px;
+}
 #UQ2{
     padding-bottom: 460px;
 }
 #Senkoku2{
     padding-bottom: 520px;
+}
+#taisen2{
+    padding-bottom: 350px;
 }
 h1{
     text-align: center;
@@ -47,10 +56,12 @@ h1{
     margin-top: 100px;
     margin-left: 3vw;
 }
-.logo .uqlogo, .logo .bclogo, .logo .snblogo{
+.logo .uqlogo, .logo .bclogo, .logo .snblogo,
+.logo .tlogo, .logo .snslogo{
     width: 200px; 
     height: auto;
 }
+
 .logo #logo1{
     font-size: 25px;
 }
@@ -87,7 +98,7 @@ p{
 }
 
 /* Style the tab */
-.tab {
+.tab, .tab2 {
     margin-left: 2vw;
     float: left;
     border: 1px solid #ccc;
@@ -97,7 +108,7 @@ p{
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tab button, .tab2 button {
     display: block;
     background-color: inherit;
     color: black;
@@ -113,17 +124,17 @@ p{
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button:hover, .tab2 button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
+.tab button.active, .tab2 button.active {
     background-color: #ccc;
 }
 
 /* Style the tab content */
-.tabcontent {
+.tabcontent, .tabcontent2 {
     float: left;
     padding: 0px 0px;
     border: 1px solid #ccc;
@@ -161,217 +172,10 @@ video{
 
 
 
-/*
-@media only screen and (max-width: 1895px) {
-    #UQ{    padding-bottom: 1255px;    }
-    #BlackClover{    padding-bottom: 20px;    }
-    h1{ font-size: 50px;    }
-    .logo{
-        width: 100%;
-        text-align: center;
-        float: none;
-        margin: 0;
-        line-height: 10px;
-        padding-bottom: 40px;
-        border-bottom-color: rgba(255, 255, 255,0.3);
-        border-bottom-style: solid;
-        border-bottom-width: 5px;
-    }
-    .logo .uqlogo{  width: 400px;    }
-    .logo #logo1{   font-size: 40px;    }
-    .logo #logo2{   font-size: 30px;    }
-    .story, .story2{
-        margin-top: 0px;
-        width:100%; 
-        margin-left: 0;
-        border-bottom-color: rgba(255, 255, 255,0.3);
-        border-bottom-style: solid;
-        border-bottom-width: 5px;
-    }
-    .story2{
-        overflow: none;
-        height: auto;
-    }
-    .story p, .story2 p{
-        text-align: center;
-        margin-left: 0;
-        float: none;
-        font-size: 30px;
-    }
-    .story b, .story2 b{   font-size: 35px;    }
-    .video, .video2{
-        margin-top: 0px;
-        float: none; 
-        margin-bottom: 40px;
-    }
-    .tab{
-        margin-top: 50px;  
-        margin-left: 12vw;
-        height: 703px;
-    }
-    .tab button{    height: 351.6px;    }
-    .tabcontent {
-        width: 1250px;
-        margin-top: 50px;
-        height: 703px;
-    }
-    video{  width:1250px;  }
-    
-    .video2 video{
-        margin-top: 50px; 
-        margin-left: 11vw;
-    } 
-}
-@media only screen and (max-width: 1800px) {
-    .tab{ 
-        margin-left: 7vw;
-    }
-}
-@media only screen and (max-width: 1700px) {
-    #UQ2{
-        padding-bottom: 50px;
-    }
-    .horizontal-line2{ display: none; }
-    
-    .staff1{
-        border-top-color: rgba(255, 255, 255,0.3);
-        border-top-style: solid;
-        border-top-width: 5px;
-    }
-    .staff1, .staff2, .cast1, .cast2{
-        margin-left: 0;
-        margin-top: 0;
-        float: none;
-        text-align: center;
-    }
-    .cast1{
-        padding-top: 50px;
-    }
-    .staff1 p, .staff2 p, .cast1 p, .cast2 p{
-        font-size: 30px;
-    }
-    .staff1 p b, .cast1 p b{
-        font-size: 35px;
-    }
-    .staff2{
-        padding-bottom: 50px;
-        border-bottom-color: rgba(255, 255, 255,0.3);
-        border-bottom-style: solid;
-        border-bottom-width: 5px;
-    }
-    .staff2 p, .cast2 p{
-        margin-top: 0;
-    }
-}
-@media only screen and (max-width: 1600px) {
-    .tab{ 
-        margin-left: 5vw;
-    }
-}
-@media only screen and (max-width: 1530px) {
-    .tab{ 
-        margin-left: 2vw;
-    }
-}
-@media only screen and (max-width: 1500px) {
-    .tab{ 
-        margin-left: 1vw;
-    }
-}
-@media only screen and (max-width: 1447px) {
-    #UQ{    padding-bottom: 1225px;    }
-    .video, .video2{
-        margin-top: 0px;
-        float: none; 
-        margin-bottom: 40px;
-    }
-    .tab{
-        margin-top: 50px;  
-        margin-left: 10vw;
-        height: 562px;
-    }
-    .tab button{    height: 281px;    }
-    .tabcontent {
-        width: 1000px;
-        margin-top: 50px;
-        height: 562px;
-    }
-    video{  width:1000px;  }
-    
-    .video2 video{
-        margin-left: 6%;
-    } 
-}
-@media only screen and (max-width: 1420px) {
-    .tab{ 
-        margin-left: 8vw;
-    }
-}
-@media only screen and (max-width: 1400px) {
-    .tab{ 
-        margin-left: 6vw;
-    }
-}
-@media only screen and (max-width: 1340px) {
-    .tab{ 
-        margin-left: 4vw;
-    }
-}
-@media only screen and (max-width: 1300px) {
-    #UQ{    padding-bottom: 1000px;    }
-    .video, .video2{
-        margin-top: 0px;
-        float: none; 
-        margin-bottom: 40px;
-    }
-    .tab{
-        margin-top: 50px;  
-        margin-left: 9.5vw;
-        height: 450px;
-    }
-    .tab button{    height: 225px;    }
-    .tabcontent {
-        width: 800px;
-        margin-top: 50px;
-        height: 450px;
-    }
-    video{  width:800px;  }
-    
-    .video2 video{
-        margin-left: 6%;
-    } 
-}
-@media only screen and (max-width: 1200px) {
-    #UQ{    padding-bottom: 1000px;    }
-    .video, .video2{
-        margin-top: 0px;
-        float: none; 
-        margin-bottom: 40px;
-    }
-    .tab{
-        margin-top: 50px;  
-        margin-left: 10%;
-        height: 337px;
-    }
-    .tab button{    height: 168.5px;   }
-    .tabcontent {
-        width: 600px;
-        margin-top: 50px;
-        height: 337px;
-        margin-right: 5%;
-    }
-    video{  width:600px;  }
-    
-    .video2 video{
-        margin-left: 6%;
-    } 
-}*/
-
-
 /*Side Navigation*/
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -386,13 +190,13 @@ video{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #FD7F7F;
 }
 
 .sidenav .closebtn {
@@ -415,13 +219,32 @@ video{
     transition: margin-left .5s;
 }
 
+/*Top Button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #FD7F7F;
+  }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-@media screen and (max-width:1200px) {
-    .sidenav a {font-size: 30px;}
-    .sidenav .closebtn {font-size: 70px;}
-}
+  .top{
+    margin-top: 5px;
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
