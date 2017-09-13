@@ -22,7 +22,8 @@ body{
     padding-top: 55px;
     padding-bottom: 445px;
 }
-#taisen, #taisen2, #sns, #sns2{
+#taisen, #taisen2, #sns, #sns2,
+#itf, #itf2{
     background-color: rgba(128, 128, 128,0.3);
     background-size: auto;
     padding-top: 55px;
@@ -36,6 +37,9 @@ body{
 }
 #taisen2{
     padding-bottom: 350px;
+}
+#itf2{
+    padding-bottom: 380px;
 }
 h1{
     text-align: center;
@@ -98,7 +102,7 @@ p{
 }
 
 /* Style the tab */
-.tab, .tab2 {
+.tab, .tab2, .tab3 {
     margin-left: 2vw;
     float: left;
     border: 1px solid #ccc;
@@ -108,7 +112,7 @@ p{
 }
 
 /* Style the buttons inside the tab */
-.tab button, .tab2 button {
+.tab button, .tab2 button, .tab3 button {
     display: block;
     background-color: inherit;
     color: black;
@@ -124,17 +128,17 @@ p{
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover, .tab2 button:hover {
+.tab button:hover, .tab2 button:hover, .tab3 button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active, .tab2 button.active {
+.tab button.active, .tab2 button.active, .tab3 button.active {
     background-color: #ccc;
 }
 
 /* Style the tab content */
-.tabcontent, .tabcontent2 {
+.tabcontent, .tabcontent2, .tabcontent3 {
     float: left;
     padding: 0px 0px;
     border: 1px solid #ccc;

@@ -35,6 +35,7 @@
         <a href="#Senkoku1" style="font-size: 20px;"><li>戰血夜刻</li></a>
         <a href="#taisen" style="font-size: 20px;"><li>十二大戰</li></a>
         <a href="#sns" style="font-size: 20px;"><li>食戟之靈 餐之皿</li></a>
+        <a href="#itf" style="font-size: 20px;"><li>Infini-T Force</li></a>
     </div>
     <div id="main">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
@@ -426,7 +427,7 @@
                 <p id="logo2">10月3日放送開始</p>
             </div>
             
-            <div class="story2" style="margin-left:151px;">
+            <div class="story2" style="margin-left:137px;">
             <p>
                 <b>劇情大綱</b><br><br>
                 一邊在老家的定食店「幸平餐館」方面幫忙，<br>
@@ -483,7 +484,7 @@
                     ED主題曲：nano.RIPE「虛虛實實」
                 </p>
             </div>
-            <div class = "cast1" style="margin-left:3vw;">
+            <div class = "cast1" style="margin-left:2.5vw;">
                 <p><b>CAST</b></p>
                 <p> 
                     幸平創真：松岡禎丞<br>
@@ -507,6 +508,88 @@
                 </p>
             </div>
         </div>
+
+         <!--Infini-T Force-->
+         <div class="horizontal-line"></div>
+         <div id="itf">
+             <div class = "logo" style="margin-top:60px;">
+                 <img class ="snslogo" src="img/if/logo.png" >
+                 <p id="logo1">Infini-T Force</p>
+                 <p id="logo2">10月3日放送開始</p>
+             </div>
+             
+             <div class="story2" style="margin-left:151px;">
+             <p>
+                 <b>劇情大綱</b><br><br>
+                 集合了動畫公司「龍之子」旗下四部經典英雄作品，<br>
+                 包括《科學小飛俠》、《再造人卡辛》、《宇宙騎士機械巨神》、《破裏拳旋風俠》的英雄主角，<br>
+                 為了紀念龍之子在 2017 年 10 月將迎接創立 55 周年所特別推出的企劃之一。<br>
+                 作品使用 3DCG 的方式製作，並主打以現代風格呈現。
+             </p>
+             </div>
+ 
+             <div class="video">
+                <div class="tab3"style=" margin-left: 10px;">
+                    <button class="tablinks3 active" onclick="openVideo3(event, 'PV9')">PV2</button>
+                    <button class="tablinks3" onclick="openVideo3(event, 'PV8')">PV1</button>
+                </div>
+                <div id = "PV9" class = "tabcontent3">
+                    <video id = "if2" controls>
+                        <source src="video/Infini-T Force PV2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "PV8" class = "tabcontent3" style="display: none;">
+                    <video id = "if1"  controls >
+                        <source src="video/Infini-T Force PV.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+         </div>
+         <div class="horizontal-line2"></div>
+         <div id="itf2" >
+             <div class = "staff1">
+                 <p><b>STAFF</b></p>
+                 <p> 
+                    原　　作：龍之子製作公司<br>
+                    監　　督：鈴木清崇<br>
+                    劇本統籌：大野敏哉<br>
+                    角色設計：大暮維人<br>
+                    英雄設計：佐藤敬一<br>
+                    西裝·機械設計：中北晃二<br>
+                    編　　集：奥田浩史
+                     
+                 </p>
+             </div>
+             <div class = "staff2">
+                 <p> 
+                    音　　樂：山田豐<br>
+                    音響監督：明田川 仁<br>
+                    3DCG制作：Digital Frontier<br>
+                    製　　作：龍之子製作公司<br>
+                    製作著作：Infini-T Force製作委員會<br>
+                    OP主題曲：flumpool「To be continued...」<br>
+                    ED主題曲：edda「チクタク」
+                 </p>
+             </div>
+             <div class = "cast1" style="margin-left:-5px;">
+                 <p><b>CAST</b></p>
+                 <p> 
+                    科學小飛俠／鷲尾 健：關 智一<br>
+                    宇宙騎士／南 城二：櫻井孝宏<br>
+                    旋風俠／鎧 武士：鈴村健一<br>
+                    再造人卡辛／東 鐵也：齊藤壯馬<br>
+                    界堂 笑：茅野愛衣
+                 </p>
+             </div>
+             <div class = "cast2">
+                 <p>
+                    Z：斧 篤志<br>
+                    拉加·坎：安元洋貴<br>
+                    達米安·格雷：平川大輔<br>
+                    貝爾·琳：花澤香菜  
+                 </p>
+             </div>
+         </div>
 
 
     </div>
@@ -579,6 +662,25 @@
             tablinks2 = document.getElementsByClassName("tablinks2");
             for (i = 0; i < tablinks2.length; i++) {
                 tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(videoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!--JS for openVideo3-->
+    <script>
+        function openVideo3(evt, videoName) {
+            var i, tabcontent3, tablinks3;
+            document.getElementById("if2").load();
+            document.getElementById("if1").load();
+            tabcontent3 = document.getElementsByClassName("tabcontent3");
+            for (i = 0; i < tabcontent3.length; i++) {
+                tabcontent3[i].style.display = "none";
+            }
+            tablinks3 = document.getElementsByClassName("tablinks3");
+            for (i = 0; i < tablinks3.length; i++) {
+                tablinks3[i].className = tablinks3[i].className.replace(" active", "");
             }
             document.getElementById(videoName).style.display = "block";
             evt.currentTarget.className += " active";
