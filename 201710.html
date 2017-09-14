@@ -36,6 +36,7 @@
         <a href="#taisen" style="font-size: 20px;"><li>十二大戰</li></a>
         <a href="#sns" style="font-size: 20px;"><li>食戟之靈 餐之皿</li></a>
         <a href="#itf" style="font-size: 20px;"><li>Infini-T Force</li></a>
+        <a href="#khk" style="font-size: 20px;"><li>此花綺譚</li></a>
     </div>
     <div id="main">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
@@ -509,9 +510,9 @@
             </div>
         </div>
 
-         <!--Infini-T Force-->
-         <div class="horizontal-line"></div>
-         <div id="itf">
+        <!--Infini-T Force-->
+        <div class="horizontal-line"></div>
+        <div id="itf">
              <div class = "logo" style="margin-top:60px;">
                  <img class ="snslogo" src="img/if/logo.png" >
                  <p id="logo1">Infini-T Force</p>
@@ -544,9 +545,9 @@
                     </video>
                 </div>
             </div>
-         </div>
-         <div class="horizontal-line2"></div>
-         <div id="itf2" >
+        </div>
+        <div class="horizontal-line2"></div>
+        <div id="itf2" >
              <div class = "staff1">
                  <p><b>STAFF</b></p>
                  <p> 
@@ -589,8 +590,82 @@
                     貝爾·琳：花澤香菜  
                  </p>
              </div>
-         </div>
+        </div>
 
+        <!--Konohana Kitan-->
+        <div class="horizontal-line"></div>
+        <div id="khk">
+             <div class = "logo" style="margin-top:60px;">
+                 <img class ="snslogo" src="img/kk/logo.png" >
+                 <p id="logo1">Konohana Kitan 此花綺譚</p>
+                 <p id="logo2">10月4日放送開始</p>
+             </div>
+             
+             <div class="story2" style="margin-left:112px;">
+             <p>
+                 <b>劇情大綱</b><br><br>
+                 由八百比丘尼撫育長大的野狐「柚」<br>
+                 為了學習待人處事而來到高級溫泉旅館此花亭擔任服務員，<br>
+                 在與服務員前輩們一起生活的同時，<br>
+                 也體驗了許多由造訪此花亭的神明所交織出的奇幻事件。
+             </p>
+             </div>
+ 
+             <div class="video">
+                <div class="tab4"style=" margin-left: 10px;">
+                    <button class="tablinks4 active" onclick="openVideo4(event, 'PV11')">PV</button>
+                    <button class="tablinks4" onclick="openVideo4(event, 'PV10')" style="
+                    font-family: 'Noto Sans TC';">宣傳<br>映像</button>
+                </div>
+                <div id = "PV11" class = "tabcontent4">
+                    <video id = "kk2" controls>
+                        <source src="video/Konohana Kitan PV1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "PV10" class = "tabcontent4" style="display: none;">
+                    <video id = "kk1"  controls >
+                        <source src="video/Konohana Kitan PV0.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line2"></div>
+        <div id="khk2" >
+             <div class = "staff1">
+                 <p><b>STAFF</b></p>
+                 <p> 
+                    原　　作：天乃咲哉<br>
+                    監　　督：岡本英樹<br>
+                    劇本統籌：吉岡孝夫<br>
+                    人物設定：黑澤桂子
+                     
+                 </p>
+             </div>
+             <div class = "staff2">
+                 <p> 
+                    音　　樂：菊地創<br>
+                    動畫製作：Lerche<br>
+                    製　　作：此花綺譚製作委員會<br>
+                    OP主題曲：eufonius「ココロニツボミ」
+                 </p>
+             </div>
+             <div class = "cast1" style="margin-left:4.5vw;">
+                 <p><b>CAST</b></p>
+                 <p> 
+                    柚：大野柚布子<br>
+                    皐：秦佐和子<br>
+                    棗：諏訪彩花
+                 </p>
+             </div>
+             <div class = "cast2">
+                 <p>
+                    蓮：久保田梨沙<br>
+                    櫻：加隈亞衣<br>
+                    桐：沼倉愛美 
+                 </p>
+             </div>
+        </div>
+        
 
     </div>
 
@@ -681,6 +756,25 @@
             tablinks3 = document.getElementsByClassName("tablinks3");
             for (i = 0; i < tablinks3.length; i++) {
                 tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+            }
+            document.getElementById(videoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!--JS for openVideo4-->
+    <script>
+        function openVideo4(evt, videoName) {
+            var i, tabcontent4, tablinks4;
+            document.getElementById("kk2").load();
+            document.getElementById("kk1").load();
+            tabcontent4 = document.getElementsByClassName("tabcontent4");
+            for (i = 0; i < tabcontent4.length; i++) {
+                tabcontent4[i].style.display = "none";
+            }
+            tablinks4 = document.getElementsByClassName("tablinks4");
+            for (i = 0; i < tablinks4.length; i++) {
+                tablinks4[i].className = tablinks4[i].className.replace(" active", "");
             }
             document.getElementById(videoName).style.display = "block";
             evt.currentTarget.className += " active";
