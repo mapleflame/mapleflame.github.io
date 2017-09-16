@@ -30,15 +30,15 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">首頁</a>
         <a style="color: #686868;">2017年10月新番</a>
-        <a href="#UQ" style="font-size: 20px;"><li>UQ Holder!</li></a>
-        <a href="#BlackClover" style="font-size: 20px;"><li>黑色五葉草</li></a>
-        <a href="#Senkoku1" style="font-size: 20px;"><li>戰血夜刻</li></a>
-        <a href="#taisen" style="font-size: 20px;"><li>十二大戰</li></a>
-        <a href="#sns" style="font-size: 20px;"><li>食戟之靈 餐之皿</li></a>
-        <a href="#itf" style="font-size: 20px;"><li>Infini-T Force</li></a>
-        <a href="#khk" style="font-size: 20px;"><li>此花綺譚</li></a>
-        <a href="#tta" style="font-size: 20px;"><li>月野藝能事務所</li></a>
-        <a href="#just" style="font-size: 20px;"><li>Just Because!</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('UQ','UQ2','UQline','UQline2')"><li>UQ Holder!</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('BlackClover','BlackClover2','BCline','BCline2')"><li>黑色五葉草</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('Senkoku1','Senkoku2','SKline','SKline2')"><li>戰血夜刻</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('taisen','taisen2','tline','tline2')"><li>十二大戰</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('sns','sns2','snsline','snsline2')"><li>食戟之靈 餐之皿</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('itf','itf2','ifline','ifline2')"><li>Infini-T Force</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('khk','khk2','kkline','kkline2')"><li>此花綺譚</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('tta','tta2','ttaline','ttaline2')"><li>月野藝能事務所</li></a>
+        <a href="#" style="font-size: 20px;" onclick="openContent('just','just2','jbline','jbline2')"><li>Just Because!</li></a>
     </div>
     <div id="main">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
@@ -53,8 +53,8 @@
         <center><h1>2017年10月新番</h1></center>
         
         <!--UQ Holder-->
-        <div class="horizontal-line"></div>
-        <div id="UQ">
+        <div class="horizontal-line info" id="UQline"></div>
+        <div class = "info" id="UQ">
             <div class = "logo">
                 <img class ="uqlogo" src="img/uq/logo.png">
                 <p id="logo1">UQ HOLDER! 悠久持有者！</p>
@@ -91,8 +91,8 @@
             </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="UQ2" >
+        <div class="horizontal-line2 info" id="UQline2"></div>
+        <div class = "info" id="UQ2" >
             <div class = "staff1">
                 <p><b>STAFF</b></p>
                 <p> 
@@ -150,10 +150,10 @@
                 </p>
             </div>
         </div>
-
+            
         <!--Black Clover-->
-        <div class="horizontal-line"></div>
-        <div id="BlackClover">
+        <div class="horizontal-line info" id="BCline"></div>
+        <div id="BlackClover" class = "info">
             <div class = "logo">
                 <img class ="bclogo" src="img/bc/logo.png">
                 <p id="logo1">Black Clover 黑色五葉草</p>
@@ -180,8 +180,8 @@
             </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="BlackClover2" >
+        <div class="horizontal-line2 info" id="BCline2"></div>
+        <div id="BlackClover2" class = "info" >
             <div class = "staff1">
                 <p><b>STAFF</b></p>
                 <p> 
@@ -235,9 +235,10 @@
             </div>
         </div>
         
+        
         <!--戰刻夜血-->
-        <div class="horizontal-line"></div>
-        <div id="Senkoku1">
+        <div class="horizontal-line info" id="SKline"></div>
+        <div id="Senkoku1" class = "info">
             <div class = "logo">
                 <img class ="snblogo" src="img/snb/logo.png">
                 <p id="logo1">Senkoku Night Blood 戰刻夜血</p>
@@ -270,8 +271,8 @@
             </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="Senkoku2" >
+        <div class="horizontal-line2 info" id="SKline2"></div>
+        <div id="Senkoku2" class = "info">
             <div class = "staff1">
                 <p><b>STAFF</b></p>
                 <p> 
@@ -335,8 +336,8 @@
         </div>
 
         <!--十二大戰-->
-        <div class="horizontal-line"></div>
-        <div id="taisen">
+        <div class="horizontal-line info" id="tline"></div>
+        <div id="taisen" class = "info">
             <div class = "logo" style="margin-left:5vw;">
                 <img class ="tlogo" src="img/12/logo.png" style="-webkit-filter: invert(1); filter:invert(1);">
                 <p id="logo1">12 Taisen 十二大戰</p>
@@ -375,8 +376,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="taisen2" >
+        <div class="horizontal-line2 info" id="tline2"></div>
+        <div id="taisen2" class = "info">
             <div class = "staff1">
                 <p><b>STAFF</b></p>
                 <p> 
@@ -421,8 +422,8 @@
         </div>
 
         <!--食戟之靈-->
-        <div class="horizontal-line"></div>
-        <div id="sns">
+        <div class="horizontal-line info" id="snsline"></div>
+        <div id="sns" class = "info">
             <div class = "logo" style="margin-top: 0px;">
                 <img class ="snslogo" src="img/sns/logo.png">
                 <p id="logo1">Shokugeki no Soma S3</p>
@@ -459,8 +460,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="sns2" >
+        <div class="horizontal-line2 info" id="snsline2"></div>
+        <div id="sns2" class = "info">
             <div class = "staff1">
                 <p><b>STAFF</b></p>
                 <p> 
@@ -513,8 +514,8 @@
         </div>
 
         <!--Infini-T Force-->
-        <div class="horizontal-line"></div>
-        <div id="itf">
+        <div class="horizontal-line info" id="ifline"></div>
+        <div id="itf" class = "info">
              <div class = "logo" style="margin-top:60px;">
                  <img class ="snslogo" src="img/if/logo.png" >
                  <p id="logo1">Infini-T Force</p>
@@ -548,8 +549,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="itf2" >
+        <div class="horizontal-line2 info" id="ifline2"></div>
+        <div id="itf2" class = "info">
              <div class = "staff1">
                  <p><b>STAFF</b></p>
                  <p> 
@@ -595,8 +596,8 @@
         </div>
 
         <!--Konohana Kitan-->
-        <div class="horizontal-line"></div>
-        <div id="khk">
+        <div class="horizontal-line info" id="kkline"></div>
+        <div id="khk" class = "info">
              <div class = "logo" style="margin-top:120px;">
                  <img class ="snslogo" src="img/kk/logo.png" >
                  <p id="logo1">Konohana Kitan 此花綺譚</p>
@@ -631,8 +632,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="khk2" >
+        <div class="horizontal-line2 info" id="kkline2"></div>
+        <div id="khk2" class = "info">
              <div class = "staff1">
                  <p><b>STAFF</b></p>
                  <p> 
@@ -669,8 +670,8 @@
         </div>
         
         <!--TSUKIPRO THE ANIMATION-->
-        <div class="horizontal-line"></div>
-        <div id="tta">
+        <div class="horizontal-line info" id="ttaline"></div>
+        <div id="tta" class = "info">
              <div class = "logo" style="margin-top:50px;">
                  <img class ="snslogo" src="img/tp/logo.png" style="background-color:white;" >
                  <p id="logo1">TSUKIPRO THE ANIMATION</p>
@@ -708,8 +709,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="tta2" >
+        <div class="horizontal-line2 info" id="ttaline2"></div>
+        <div id="tta2" class = "info">
              <div class = "staff1">
                  <p><b>STAFF</b></p>
                  <p> 
@@ -777,8 +778,8 @@
         </div>
         
         <!--Just Because!-->
-        <div class="horizontal-line"></div>
-        <div id="just">
+        <div class="horizontal-line info" id="jbline"></div>
+        <div id="just" class = "info">
              <div class = "logo" style="margin-top:110px; margin-left:6vw;">
                  <img class ="snslogo" src="img/jb/logo.png">
                  <p id="logo1">Just Because!</p>
@@ -807,8 +808,8 @@
                 </div>
             </div>
         </div>
-        <div class="horizontal-line2"></div>
-        <div id="just2" >
+        <div class="horizontal-line2 info" id="jbline2"></div>
+        <div id="just2" class = "info">
              <div class = "staff1">
                  <p><b>STAFF</b></p>
                  <p> 
@@ -840,7 +841,6 @@
                  </p>
              </div>
         </div>
-        
     </div>
     
     <div class="horizontal-line" style="height:1.5px; background-color:white;"></div>
@@ -874,6 +874,35 @@
             document.getElementById("content").style.width = "1903px";
         }
     </script>
+    
+    <script>
+        var start;
+        start = document.getElementsByClassName("info");
+        for(i = 0 ; i < start.length ; i++ ){
+            if(start[i].style.display != "none"){
+                start[i].style.display = "none";
+            }
+        }
+        document.getElementById("UQ").style.display = "block";
+        document.getElementById("UQ2").style.display = "block";
+        document.getElementById("UQline").style.display = "block";
+        document.getElementById("UQline2").style.display = "block";
+        function openContent(con1, con2, line1, line2){
+            var i, info;
+            info = document.getElementsByClassName("info");
+            for(i = 0 ; i < info.length ; i++ ){
+                if(info[i].style.display != "none"){
+                    info[i].style.display = "none";
+                }
+            }
+            document.getElementById(con1).style.display = "block";
+            document.getElementById(con2).style.display = "block";
+            document.getElementById(line1).style.display = "block";
+            document.getElementById(line2).style.display = "block";
+        }
+    </script>
+    
+    
 
     <!--JS for openVideo-->
     <script>      
