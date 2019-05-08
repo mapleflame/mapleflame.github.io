@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon//ms-icon-144x144.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.14/angular-material.min.css">
+    <title>動漫資訊| 2019年7月新番</title>
+</head>
+    
+<style>
+    .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        margin-top: 20px;
+        height: 0;
+    }
+    .iframe-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }    
+    .list-enable{
+        cursor: pointer
+    } 
+    .list-disable{
+        cursor: default
+    }
+    .pagination-spacing{
+        margin-top: 10px
+    }
+</style>    
+    
+<body style="background-color: black" ng-app="animeInfo" ng-controller="animeControl">
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">冰楓炎羽</a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">列表</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item list-enable" ng-repeat="title in titles track by $index" ng-click="select($index, 'anime')" ng-class="{ 'disabled text-danger list-disable' : index.anime == $index }">{{ title }}</a>
+                    </div>
+                </li>
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>-->
+        </div>
+    </nav>
+    
+    <div class="container-fluid" style="color: white">
+        <div>
+            <div class="row">
+                <div class="col-sm-3 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
+                    <div class="text-center">
+                        <img ng-src="{{show.logo}}" style="max-width: 300px;height: auto" spinner-on-load>
+                        <p style="font-size: 30px; font-weight: bold">{{show.title}}</p>
+                        <p style="font-size: 20px">{{show.date}}放送開始</p>
+                     </div>
+                </div>
+
+                <div class="col-sm-4 d-flex align-items-center border-bottom" style="min-height: 400px">
+                    <div>
+                        <p style="font-size: 30px; font-weight: bold">劇情大綱</p>
+                        <p style="font-size: 20px">{{show.summary}}</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
+                    <div style="width:100%">
+                        <div class="iframe-container">
+                            <iframe width="768" height="432" ng-src="{{ trust(show.video[index.video]) }}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <nav class="pagination-spacing">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item" ng-repeat="i in [].constructor(videos) track by $index" ng-if="videos != 1" ng-click="select($index, 'video')"><a class="page-link" href="#" ng-class="{ 'bg-dark text-white' : index.video == $index, 'text-dark' : index.video != $index }">{{ $index + 1 }}</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
+                    <div class="col-sm-2 font-weight-bold" style="font-size: 30px">STAFF</div>
+                    <div class="col-sm-5" style="font-size: 20px"><p ng-repeat="staff in show.staff | limitTo: 8 track by $index">{{staff}}</p></div>
+                </div>
+
+                <div class="col-sm-6 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
+                    <div class="col-sm-2 font-weight-bold" style="font-size: 30px">CAST</div>
+                    <div class="col-sm-5" style="font-size: 20px"><p ng-repeat="cast in show.cast | limitTo: 8 track by $index">{{cast}}</p></div>
+                    <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div style="font-size: 20px"><p ng-repeat="cast in anime.cast | limitTo: 10 track by $index">{{cast}}</p></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="anime.js"></script>
+    
+</body>
+</html>

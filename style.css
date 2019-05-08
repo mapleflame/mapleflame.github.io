@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 
+
 html, body {
     margin: 0px;
     font-family: 'Noto Sans TC';
@@ -10,17 +11,63 @@ html, body {
     padding: 0;
 }
 
-/* The navigation bar */
+.bgimg {
+    background-image: url('img/bg/bg.jpg');
+    width: 100%; 
+    height: 95%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    color: #FFF;
+    padding: 18px;
+    font-size: 70px;
+    text-align: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+html, body {
+    margin: 0px;
+    font-family: 'Noto Sans TC';
+    background-color: black;
+    color: black;
+    height: 100%;
+    padding: 0;
+}
+
 .navbar {
     overflow: hidden;
     background-color:rgba(255,255,255,0.2);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0;
+    width: 100%; 
     text-align: center;
 }
 
-/* Links inside the navbar */
 .navbar a {
     margin-left: 16vw;
     width: 10%;
@@ -67,7 +114,6 @@ a:hover{
     }
 }
 
-/*Index*/
 .bgimg {
     bottom: -1vw;
     width: 100%;
@@ -101,4 +147,4 @@ a:hover{
     padding: 18px;
     font-size: 70px;
     letter-spacing: 2px;
-}
+}*/
