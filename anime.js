@@ -33,7 +33,7 @@ app.controller('animeControl', function($scope, $http, $sce) {
             $scope.index.anime = index
             $scope.show = $scope.animes[index]
             $scope.videos = $scope.show.video.length
-            $scope.index.video = 0
+            $scope.index.video = ($scope.videos != 0) ? 0 : -1
         }
     }
 })

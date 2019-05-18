@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-sm-3 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
                     <div class="text-center">
-                        <img ng-src="{{show.logo}}" style="max-width: 300px;height: auto" spinner-on-load>
+                        <img ng-src="{{show.logo}}" style="max-width: 300px;height: auto" ng-if="show.logo != ''">
                         <p style="font-size: 30px; font-weight: bold">{{show.title}}</p>
                         <p style="font-size: 20px">{{show.date}}放送開始</p>
                      </div>
@@ -95,12 +95,12 @@
 
                 <div class="col-sm-5 justify-content-center d-flex align-items-center border-bottom" style="min-height: 400px">
                     <div style="width:100%">
-                        <div class="iframe-container">
+                        <div class="iframe-container" ng-if="videos != 0">
                             <iframe width="768" height="432" ng-src="{{ trust(show.video[index.video]) }}" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <nav class="pagination-spacing">
                             <ul class="pagination justify-content-center">
-                                <li class="page-item" ng-repeat="i in [].constructor(videos) track by $index" ng-if="videos != 1" ng-click="select($index, 'video')"><a class="page-link" href="#" ng-class="{ 'bg-dark text-white' : index.video == $index, 'text-dark' : index.video != $index }">{{ $index + 1 }}</a></li>
+                                <li class="page-item" ng-repeat="i in [].constructor(videos) track by $index" ng-if="videos > 1" ng-click="select($index, 'video')"><a class="page-link" href="#" ng-class="{ 'bg-dark text-white' : index.video == $index, 'text-dark' : index.video != $index }">{{ $index + 1 }}</a></li>
                             </ul>
                         </nav>
                     </div>
