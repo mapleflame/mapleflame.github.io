@@ -1,0 +1,30 @@
+﻿{
+  "202010": {
+    "continue": [],
+    "finished": 
+    [
+      {
+        "title": "BURN THE WITCH 龍與魔女",
+        "image": "https://img.vim-cn.com/25/fe29f95dcd0f359b07edcf65fbf52801242c70.jpg",
+        "download": 
+        {
+          "Lilith-Raws": [
+            "https://dl.dmhy.org/2020/10/02/8823cdd65a783f1b428e36b8d98927babc331423.torrent",
+            "https://dl.dmhy.org/2020/10/02/d3af5a1983811e2da657163e7a5be672acd3d547.torrent",
+            "https://dl.dmhy.org/2020/10/02/ffdd6702f5dbed731476476f8960c6b4e2324d40.torrent"
+          ],
+          "c.c.動漫": [
+            "https://dl.dmhy.org/2020/10/02/150f14e81ba21061d5f8eb2a485bef4934f93406.torrent",
+            "https://dl.dmhy.org/2020/10/02/b58218ab7d8018afcb50990ba8c7516542f966b6.torrent",
+            "https://dl.dmhy.org/2020/10/02/54fa8ddacf270680899859bd3e6ecd6b284ecb94.torrent"
+          ],
+          "喵萌奶茶屋": [
+            "https://dl.dmhy.org/2020/10/04/f56d0401ebef663b084a2fb7f4b80acbc4b78b34.torrent",
+            "https://dl.dmhy.org/2020/10/04/c1cc270d274f3fcf7c14d3e5b891a56e2862b3f9.torrent",
+            "https://dl.dmhy.org/2020/10/04/3b663eaa34e0c65d2653d76f76aa32991b864b65.torrent"
+          ]
+        }
+      }
+    ]
+  }
+}
